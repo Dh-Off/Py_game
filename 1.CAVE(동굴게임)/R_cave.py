@@ -66,13 +66,13 @@ def main():
                 game_over = True
         
         # 그리기
-        
+        if i == 5:
+            i = 0
+            
         if i == 0 or score % 1000 == 0:
             SURFACE.fill(col[i])
             i += 1
-            if i == 5:
-                i = 0
-                
+   
         else:
             SURFACE.fill(col[i])
             
