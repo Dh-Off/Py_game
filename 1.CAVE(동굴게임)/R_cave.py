@@ -12,17 +12,17 @@ FPSCLOCK = pygame.time.Clock()
 def main():
     """ 메인 루틴 """
     #
-    col = ["white","orange","green","purple","red","white"]
+    col = ["white","orange","green","purple","red","blue"]
     #
     walls = 80
     #ship_x = 10
     ship_y = 250  #캐릭터 y좌표
     velocity = 0  #상하이동
-    score, i = 0, -1
+    score, i = 0, 0
     slope = randint(1, 6)  #동굴 기울
     sysfont = pygame.font.SysFont(None, 36)
-    ship_image = pygame.image.load("ship.png")
-    bang_image = pygame.image.load("bang.png")
+    ship_image = pygame.image.load("C:/Users/ondon/OneDrive/Desktop/겜프/PyGame/Py_game/1.CAVE(동굴게임)/ship.png")
+    bang_image = pygame.image.load("C:/Users/ondon/OneDrive/Desktop/겜프/PyGame/Py_game/1.CAVE(동굴게임)/bang.png")
     holes = []
     for xpos in range(walls):
         holes.append(Rect(xpos * 10, 100, 10, 400)) #겜 시작시 동굴의 직사각형
@@ -66,13 +66,12 @@ def main():
                 game_over = True
         
         # 그리기
-        if i == 5:
+        if i == 6:
             i = 0
             
-        if i == 0 or score % 1000 == 0:
+        if  score % 1000 == 0:
             SURFACE.fill(col[i])
             i += 1
-   
         else:
             SURFACE.fill(col[i])
             
