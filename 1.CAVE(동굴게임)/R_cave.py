@@ -21,8 +21,8 @@ def main():
     score, i = 0, 0
     slope = randint(1, 6)  #동굴 기울
     sysfont = pygame.font.SysFont(None, 36)
-    ship_image = pygame.image.load("C:/Users/ondon/OneDrive/Desktop/겜프/PyGame/Py_game/1.CAVE(동굴게임)/ship.png")
-    bang_image = pygame.image.load("C:/Users/ondon/OneDrive/Desktop/겜프/PyGame/Py_game/1.CAVE(동굴게임)/bang.png")
+    ship_image = pygame.image.load("C:/Users/ondon/OneDrive/Desktop/겜프/PyGame/Py_game/1.CAVE(동굴게임)/소스/ship.png")
+    bang_image = pygame.image.load("C:/Users/ondon/OneDrive/Desktop/겜프/PyGame/Py_game/1.CAVE(동굴게임)/소스/bang.png")
     holes = []
     for xpos in range(walls):
         holes.append(Rect(xpos * 10, 100, 10, 400)) #겜 시작시 동굴의 직사각형
