@@ -1,0 +1,41 @@
+클래스 line
+	함수) __init__()
+	함수)	update ()각도, 당기기 처리
+	함수) rotate() 회전처리
+	함수) set_direction
+	함수) draw
+	함수) set_init_state
+
+클래스 c_unit
+	함수) __init__()
+	함수) set_position
+	함수)
+
+====================
+함수) cloud_new 아이템 그룹에 추가
+함수) red_cloud_new 아이템 그룹에 추가
+함수) Unit_12 유닛생성
+함수) wall_new 아이템 벽 생성
+
+===================== 변수
+claw 미사일
+screen_width, screen_height 사이즈
+sysfont, fail_font
+
+default_x_claw, default_x_claw 중심점에서 줄간격, 초기 줄 간격
+to_y || y좌표 기준으로 미사일  이동시킬 값을 저장하는 변수
+
+left, right, stop 왼,오,정지
+
+move_speed 발사 스피드
+return_speed 돌아올때 속도
+
+그룹
+item_1_group
+item_2_group
+
+a = 낙하속도
+castle_hp  = 성 체력
+p = 아이템1의 체력
+score = 점수
+w = 한 부대 인원 증가 수
